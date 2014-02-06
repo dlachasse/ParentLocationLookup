@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("ParentLocationLookup")> 
+<Assembly: AssemblyTitle("Location Lookup")> 
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("ParentLocationLookup")> 
+<Assembly: AssemblyCompany("Blank Apparel")> 
+<Assembly: AssemblyProduct("Location Lookup")> 
 <Assembly: AssemblyCopyright("Copyright © David Alexander the Great 2014")> 
 <Assembly: AssemblyTrademark("")> 
 

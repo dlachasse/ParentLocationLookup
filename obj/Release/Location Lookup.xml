@@ -2,7 +2,7 @@
 <doc>
 <assembly>
 <name>
-ParentLocationLookup
+LocationLookup
 </name>
 </assembly>
 <members>
