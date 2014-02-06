@@ -133,7 +133,7 @@ Partial Class Form1
         Me.SearchButton.Name = "SearchButton"
         Me.SearchButton.Size = New System.Drawing.Size(744, 38)
         Me.SearchButton.TabIndex = 3
-        Me.SearchButton.Text = "Search dem productz"
+        Me.SearchButton.Text = "Search products"
         Me.SearchButton.UseVisualStyleBackColor = True
         '
         'LocationDataBindingSource
@@ -161,7 +161,7 @@ Partial Class Form1
         Me.Controls.Add(Me.LocationDataDataGridView)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "Lookup Hoez"
+        Me.Text = "Lookup Items"
         CType(Me.LocationDataDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LocationDataBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataSet1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
