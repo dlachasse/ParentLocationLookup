@@ -114,7 +114,7 @@ Partial Class Form1
         '
         'DataSet1
         '
-        Me.DataSet1.DataSetName = "DataSet1"
+        Me.DataSet1.DataSetName = "LocationDataSet"
         Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'TextBox1
@@ -160,6 +160,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.LocationDataDataGridView)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
         Me.Name = "Form1"
         Me.Text = "Lookup Items"
         CType(Me.LocationDataDataGridView, System.ComponentModel.ISupportInitialize).EndInit()

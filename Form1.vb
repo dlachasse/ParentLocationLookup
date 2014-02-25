@@ -3,7 +3,6 @@ Imports System.Data.SqlClient
 
 Public Class Form1
 
-    Public Property AcceptButton As IButtonControl
 
     Private Sub LocationDataBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
 
@@ -13,6 +12,11 @@ Public Class Form1
 
     End Sub
 
+    Private Sub Form1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Me.KeyPress
+
+        formatAndSearch()
+
+    End Sub
 
     Private Sub LocationDataBindingNavigatorSaveItem_Click_1(sender As Object, e As EventArgs)
         Me.Validate()
@@ -32,6 +36,10 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
+        formatAndSearch()
+    End Sub
+
+    Public Sub formatAndSearch()
         Dim searchParams As String = TextBox1.Text
 
         If Regex.IsMatch(TextBox1.Text, "(~{3}\d+/)") Then
@@ -43,7 +51,6 @@ Public Class Form1
         searchParams = "%" + searchParams + "%"
 
         Me.LocationDataTableAdapter.FillBy(Me.DataSet1.LocationData, searchParams)
-
     End Sub
 
     Public Function barcodeLookup(ByVal barcode As String)
@@ -58,4 +65,8 @@ Public Class Form1
         barcodeLookup = value.ToString
 
     End Function
+
+    Protected Overrides Sub OnKeyPress(ByVal e As System.Windows.Forms.KeyPressEventArgs)
+        If e.KeyChar = Chr(Keys.Enter) Then MyBase.OnKeyPress(e)
+    End Sub
 End Class
