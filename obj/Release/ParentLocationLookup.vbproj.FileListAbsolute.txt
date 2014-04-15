@@ -12,3 +12,4 @@ c:\users\dlachasse\documents\visual studio 2012\Projects\ParentLocationLookup\Pa
 c:\users\dlachasse\documents\visual studio 2012\Projects\ParentLocationLookup\ParentLocationLookup\obj\Release\Location Lookup.exe
 c:\users\dlachasse\documents\visual studio 2012\Projects\ParentLocationLookup\ParentLocationLookup\obj\Release\Location Lookup.xml
 c:\users\dlachasse\documents\visual studio 2012\Projects\ParentLocationLookup\ParentLocationLookup\obj\Release\Location Lookup.pdb
+C:\Users\dlachasse\Documents\Visual Studio 2012\Projects\ParentLocationLookup\ParentLocationLookup\obj\Release\ParentLocationLookup.Form2.resources
